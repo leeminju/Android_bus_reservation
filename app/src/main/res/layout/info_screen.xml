@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="NAME:"
+        android:textSize="40dp" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_toEndOf="@+id/phone"
+        android:hint="O O O"
+        android:inputType="text"
+        android:textSize="40dp" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="30dp"
+        android:text="PHONE:"
+        android:textSize="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phone"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_alignParentEnd="true"
+        android:hint="010-XXXX-XXXX"
+        android:inputType="number"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ok_button"
+        android:layout_alignBottom="@+id/ok_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="43dp"
+        android:text="Cancel"
+        android:textSize="20sp"
+        android:onClick="cancel_b_clicked"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:text="OK"
+        android:textSize="20sp"
+        android:id="@+id/ok_button"
+        android:onClick="ok_b_clicked"
+        />
+</RelativeLayout>

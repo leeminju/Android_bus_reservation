@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<Button
+    android:id="@+id/box1"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="20dp"
+    android:background="#FF0000FF"
+    android:onClick="box1_clicked"/>
+    <Button
+        android:id="@+id/box2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/box1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#FF0000FF"
+        android:onClick="box2_clicked"
+        />
+    <Button
+        android:id="@+id/box3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/box1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FF0000FF"
+        android:onClick="box3_clicked"/>
+    <Button
+        android:id="@+id/box4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/box2"
+        android:layout_toRightOf="@+id/box3"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#FF0000FF"
+        android:onClick="box4_clicked"/>
+    <Button
+        android:id="@+id/box5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/box3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FF0000FF"
+        android:onClick="box5_clicked"/>
+    <Button
+        android:id="@+id/box6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/box4"
+        android:layout_toRightOf="@+id/box3"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#FF0000FF"
+        android:onClick="box6_clicked"/>
+</RelativeLayout>

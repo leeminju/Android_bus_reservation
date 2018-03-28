@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/idtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID:"
+        android:textSize="40dp" />
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/idtext"
+        android:hint="아이디"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/pwtext"
+        android:layout_below="@+id/idtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PW:"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/pw"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pwtext"
+        android:hint="비밀번호"
+        android:textSize="30dp" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:text="LOG IN"
+        android:textSize="20dp"
+        android:onClick="login_b_clicked"
+        />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="230dp"
+        android:layout_centerHorizontal="true"
+        android:text="SIGN UP"
+        android:textSize="20dp"
+        android:onClick="signup_b_clicked"
+        />
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:text="EXIT"
+        android:textSize="20dp"
+        android:onClick="exit_b_clicked"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pw"
+        android:layout_below="@+id/exit"
+        android:layout_marginTop="19dp" />
+
+</RelativeLayout>
